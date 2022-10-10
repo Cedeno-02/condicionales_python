@@ -4,7 +4,7 @@
 # Autor: Inove Coding School
 # Version: 2.0
 
-# NOTA: 
+# NOTA:
 # Estos ejercicios son de mayor dificultad que los de clase y práctica.
 # Están pensados para aquellos con conocimientos previo o que dispongan
 # de mucho más tiempo para abordar estos temas por su cuenta.
@@ -33,3 +33,68 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+palabra_1 = str(input('Ingrese la primer palabra '))
+print('Ingrese la segunda palabra')
+palabra_2 = str(input())
+print('Ingrese la tercera palabra')
+palabra_3 = str(input())
+
+print('Ingrese una opción para continuar')
+print('1: Ordernar alfabeticamente las palabras e imprimir del mayor al menor')
+print('2: Ordernar las palabras por cantidad de letras e imprimir del mayor al menor')
+opcion = int(input())
+
+if opcion == 1:
+    if palabra_1 > palabra_2:
+        if palabra_1 > palabra_3:
+            if palabra_2 > palabra_3:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_1, palabra_2, palabra_3))
+            else:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_1, palabra_3, palabra_2))
+    else:
+        if palabra_1 > palabra_3:
+            if palabra_2 > palabra_3:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_2, palabra_1, palabra_3))
+            else:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_3, palabra_1, palabra_2))
+        else:
+            if palabra_2 > palabra_3:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_2, palabra_3, palabra_1))
+            else:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_3, palabra_2, palabra_1))
+elif opcion == 2:
+    if len(palabra_1) > len(palabra_2):
+        if len(palabra_1) > len(palabra_3):
+            if len(palabra_2) > len(palabra_3):
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_1, palabra_2, palabra_3))
+            else:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_1, palabra_3, palabra_2))
+    else:
+        if len(palabra_1) > len(palabra_3):
+            if len(palabra_2) > len(palabra_3):
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_2, palabra_1, palabra_3))
+            else:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_3, palabra_1, palabra_2))
+        else:
+            if len(palabra_2) > len(palabra_3):
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_2, palabra_3, palabra_1))
+            else:
+                print('{} mayor, {} media, {} menor'.format(
+                    palabra_3, palabra_2, palabra_1))
+else:
+    print('Has elegido una opción inválida.')
+
+
+# Fabián Cedeño Rojas-

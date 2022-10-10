@@ -4,7 +4,7 @@
 # Autor: Inove Coding School
 # Version: 2.0
 
-# NOTA: 
+# NOTA:
 # Estos ejercicios son de mayor dificultad que los de clase y práctica.
 # Están pensados para aquellos con conocimientos previo o que dispongan
 # de mucho más tiempo para abordar estos temas por su cuenta.
@@ -30,3 +30,35 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+print('Ingrese la primer temperatura')
+tempe_1 = float(input())
+print('Ingrese la segunda temperatura')
+tempe_2 = float(input())
+print('Ingrese la tercera temperatura')
+tempe_3 = float(input())
+
+if tempe_1 > tempe_2:
+    if tempe_1 > tempe_3:
+        if tempe_2 > tempe_3:
+            print('{} mayor, {} media, {} menor'.format(
+                tempe_1, tempe_2, tempe_3))
+        else:
+            print('{} mayor, {} media, {} menor'.format(
+                tempe_1, tempe_3, tempe_2))
+else:
+    if tempe_1 > tempe_3:
+        if tempe_2 > tempe_3:
+            print('{} mayor, {} media, {} menor'.format(
+                tempe_2, tempe_1, tempe_3))
+        else:
+            print('{} mayor, {} media, {} menor'.format(
+                tempe_3, tempe_1, tempe_2))
+    else:
+        if tempe_2 > tempe_3:
+            print('{} mayor, {} media, {} menor'.format(
+                tempe_2, tempe_3, tempe_1))
+        else:
+            print('{} mayor, {} media, {} menor'.format(
+                tempe_3, tempe_2, tempe_1))
+
+# Fabián Cedeño Rojas
